@@ -21,6 +21,10 @@ Lean   : それを証明する
 - [第1回: 形式手法は何をしているのか](sessions/01-overview.md)
 - [第2回: 答えを仕様の言葉に直し、Alloy で確かめる](sessions/02-model.md)
 
+## 付録
+
+- [Alloy の基本記法](appendix/alloy-basics.md)
+
 ## Alloy の動かし方
 
 1. [Releases](https://github.com/AlloyTools/org.alloytools.alloy/releases) から `org.alloytools.alloy.dist.jar` を入手して `tools/` に置く
