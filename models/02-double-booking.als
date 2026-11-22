@@ -81,3 +81,7 @@ check NaiveNoOverwrite for 3 but 1 Driver, 10 steps
 -- (4) 先勝ち版 × 両方の性質
 assert FirstWinsSafe { TracesFirstWins implies always (OneAssignee and NoOverwrite) }
 check FirstWinsSafe for 3 but 10 steps
+
+-- (5) 健全性チェック: 先勝ち版で、承諾が実際に起こりうるか
+--     （これが No instance なら、(4) の「反例なし」は何も言っていない）
+run FirstWinsCanAccept { TracesFirstWins and eventually some assignee } for 3 but 5 steps
